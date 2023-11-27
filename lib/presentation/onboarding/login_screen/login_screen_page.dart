@@ -33,7 +33,7 @@ class _LoginScreenPageState extends State<LoginScreenPage> {
             decoration: InputDecoration(
                 contentPadding: const EdgeInsets.fromLTRB(8, 10, 10, 40),
                 border: const OutlineInputBorder(),
-                hintText: "Username",
+                hintText: "Usernam",
                 hintStyle: Theme.of(context)
                     .textTheme
                     .labelMedium!
