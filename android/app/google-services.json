@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "701792429808",
+    "project_id": "col23-427a4",
+    "storage_bucket": "col23-427a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701792429808:android:f15206632ee322842d8435",
+        "android_client_info": {
+          "package_name": "com.example.klusterthon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALEKpw-RFhqX2zrT3u1akB0mcOC9bcsPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

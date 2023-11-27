@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:klusterthon/app_routes.dart';
 import 'package:klusterthon/core/helper/constant_var_helper.dart';
-import 'package:klusterthon/main.dart';
 import 'package:klusterthon/presentation/onboarding/login_screen/bloc/login_bloc.dart';
 import 'package:klusterthon/widgets/onboarding_form/onboarding_form_page.dart';
 
