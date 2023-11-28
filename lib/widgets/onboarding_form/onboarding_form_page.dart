@@ -132,6 +132,8 @@ class _OnboardingFormPageState extends State<OnboardingFormPage> {
                         width: MediaQuery.of(context).size.width,
                         height: 44,
                         child: EasyButton(
+                          buttonColor: primaryColor,
+
                           onPressed: widget.onMainButtonClick == null
                               ? null
                               : () async {
@@ -220,6 +222,7 @@ class _OnboardingFormPageState extends State<OnboardingFormPage> {
                               height: 45,
                               child: EasyButton(
                                   type: EasyButtonType.outlined,
+                                  buttonColor: primaryColor,
                                   onPressed: () {},
                                   loadingStateWidget:
                                       LoadingAnimationWidget.beat(

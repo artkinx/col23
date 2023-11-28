@@ -16,17 +16,17 @@ class SignUpBloc extends Bloc<SignUpEvent, SignUpState> {
   }
 
   _signUpSendData(PostRequestEvent event, Emitter<SignUpState> emit) async {
-    var userReq = UserApiRequests();
+    // var userReq = UserApiRequests();
 
-    if (event.request == null) {
-      return;
-    }
+    // if (event.request == null) {
+    //   return;
+    // }
 
-    var resp = await userReq.signUpAsync(event.request!);
+    // var resp = await userReq.signUpAsync(event.request!);
 
-    if (!resp) {
-      return;
-    }
+    // if (!resp) {
+    //   return;
+    // }
 
     await navService.pushNamed(RouteNames.register);
   }

@@ -1,15 +1,20 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:klusterthon/app_routes.dart';
 import 'package:klusterthon/core/services/bloc_provider_service.dart';
 import 'package:klusterthon/core/services/navigation_service.dart';
 import 'package:klusterthon/core/theme/app_theme.dart';
+import 'package:klusterthon/firebase_options.dart';
 import 'package:klusterthon/presentation/home/dash_board/dash_board_page.dart';
 import 'package:klusterthon/presentation/onboarding/login_screen/login_screen_page.dart';
 
 NavigationService navService = NavigationService();
 
-void main() {
+Future<void> main() async {
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MainApp());
 }
 
@@ -26,7 +31,7 @@ class MainApp extends StatelessWidget {
         onGenerateRoute: (v) => AppRoutes.buildRoutes(v),
         theme: AppTheme.lightTheme,
         darkTheme: AppTheme.darkTheme,
-        home: const DashBoardPage(),
+        home: const LoginScreenPage(),
       ),
     );
   }

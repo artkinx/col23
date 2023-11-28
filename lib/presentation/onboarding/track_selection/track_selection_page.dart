@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:klusterthon/app_routes.dart';
 import 'package:klusterthon/core/helper/constant_var_helper.dart';
+import 'package:klusterthon/core/services/navigation_service.dart';
 import 'package:klusterthon/widgets/onboarding_form/onboarding_form_page.dart';
 
 class TrackSelectionPage extends StatefulWidget {
@@ -17,6 +19,7 @@ class _TrackSelectionPageState extends State<TrackSelectionPage> {
         title: "Register",
         btnText: "Continue",
         useBodyAlone: true,
+        onMainButtonClick: () => navService.pushNamed(RouteNames.dashboard),
         body: [
           Container(
             padding: const EdgeInsets.all(10),
